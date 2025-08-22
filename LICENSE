@@ -2,6 +2,12 @@ MIT License
 
 Copyright (c) 2025 Ekene Fidelis
 
+🙌 Acknowledgements
+
+Original MSc Thesis: Modelling and Simulation of Hybrid Wind and Photovoltaic Connected System to Nigeria Power Network (Ekene Fidelis Okpara, 2019).
+
+pvlib, windpowerlib, pandapower, streamlit.
+
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
 in the Software without restriction, including without limitation the rights

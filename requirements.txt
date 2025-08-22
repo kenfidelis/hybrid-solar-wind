@@ -1,0 +1,13 @@
+# Core libraries
+numpy
+pandas
+matplotlib
+
+# Power system & renewables
+pvlib
+windpowerlib
+pandapower
+
+# Visualization & dashboard
+streamlit
+plotly

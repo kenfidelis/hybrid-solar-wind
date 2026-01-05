@@ -57,3 +57,26 @@ python run_wind.py
 Hybrid PV + Wind simulation (grid + load flow)
 python run_hybrid.py
 
+Tip: start with the sample inputs in samples/ if any script asks for data/config paths.
+
+📊 Outputs
+
+Depending on the script you run, you should see:
+
+PV and wind power profiles
+
+Hybrid generation vs load comparison
+
+Load flow outputs (bus voltages, line loading, system losses)
+
+Interactive charts in the Streamlit dashboard
+
+🗺️ Background
+
+This work is based on my MSc research in renewable integration and power system analysis, translated into a reproducible Python workflow inspired by DIgSILENT PowerFactory studies.
+
+📜 License
+
+This project is licensed under the MIT License — see the LICENSE
+
+

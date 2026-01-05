@@ -80,3 +80,5 @@ This work is based on my MSc research in renewable integration and power system 
 This project is licensed under the MIT License — see the LICENSE
 
 
+**Tech:** Python • pvlib • windpowerlib • pandapower • Streamlit
+

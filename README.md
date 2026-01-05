@@ -4,24 +4,24 @@
 [![Streamlit](https://img.shields.io/badge/Streamlit-App-green.svg)](https://streamlit.io)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
-This repository provides a **Python-based equivalent** of my MSc thesis originally modeled in DIgSILENT PowerFactory:
+This repository provides a Python-based equivalent of my MSc thesis originally modeled in DIgSILENT PowerFactory:
 
 > *Modelling and Simulation of Hybrid Wind and Photovoltaic Connected System to Nigeria Power Network*
 
-It demonstrates how **PV and Wind systems** can be modeled in Python, integrated into the Nigerian grid, and visualized interactively.
+It demonstrates how PV and wind systems can be modeled in Python, integrated into a grid network, and visualized interactively.
+
+**Tech:** Python • pvlib • windpowerlib • pandapower • Streamlit
 
 ---
 
 ## ✨ Features
-- ✅ **PV system modeling** using [pvlib](https://pvlib-python.readthedocs.io/)
-- ✅ **Wind turbine modeling** using [windpowerlib](https://windpowerlib.readthedocs.io/)
-- ✅ **Load flow & grid analysis** with [pandapower](https://www.pandapower.org/)
-- ✅ **Hybrid system simulation** (PV + Wind + Load)
-- ✅ **Interactive dashboard** with [Streamlit](https://streamlit.io)
+- ✅ PV system modeling using [pvlib](https://pvlib-python.readthedocs.io/)
+- ✅ Wind turbine modeling using [windpowerlib](https://windpowerlib.readthedocs.io/)
+- ✅ Load flow & grid analysis with [pandapower](https://www.pandapower.org/)
+- ✅ Hybrid system simulation (PV + Wind + Load)
+- ✅ Interactive dashboard with [Streamlit](https://streamlit.io)
 
 ---
-
-**Tech:** Python • pvlib • windpowerlib • pandapower • Streamlit
 
 ## 📂 Repository Structure
 ```text
@@ -36,7 +36,8 @@ hybrid-solar-wind/
 ├── README.md
 └── LICENSE
 
-🚀 Quickstart (Run Locally)
+
+## 🚀 Quickstart (Run Locally)
 1) Clone
 git clone https://github.com/kenfidelis/hybrid-solar-wind.git
 cd hybrid-solar-wind
@@ -49,7 +50,7 @@ pip install -r requirements.txt
 3) Run the Streamlit dashboard
 streamlit run app.py
 
-🧪 Run the simulation scripts (CLI)
+## 🧪 Run the simulation scripts (CLI)
 PV-only simulation
 python run_pv.py
 
@@ -72,11 +73,6 @@ Depending on the script you run, you should see:
 
 This work is based on my MSc research in renewable integration and power system analysis, translated into a reproducible Python workflow inspired by DIgSILENT PowerFactory studies.
 
-📜 License
+## 📜 License
 
-This project is licensed under the MIT License — see the [LICENSE](https://github.com/kenfidelis/hybrid-solar-wind/blob/main/LICENSE)
-
-
-
-
-
+This project is licensed under the MIT License — see the [LICENSE](LICENSE)

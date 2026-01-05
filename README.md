@@ -21,6 +21,8 @@ It demonstrates how **PV and Wind systems** can be modeled in Python, integrated
 
 ---
 
+**Tech:** Python • pvlib • windpowerlib • pandapower • Streamlit
+
 ## 📂 Repository Structure
 ```text
 hybrid-solar-wind/
@@ -59,26 +61,22 @@ python run_hybrid.py
 
 Tip: start with the sample inputs in samples/ if any script asks for data/config paths.
 
-📊 Outputs
-
+## 📊 Outputs
 Depending on the script you run, you should see:
+- PV and wind power profiles
+- Hybrid generation vs load comparison
+- Load flow outputs (bus voltages, line loading, system losses)
+- Interactive charts in the Streamlit dashboard
 
-PV and wind power profiles
-
-Hybrid generation vs load comparison
-
-Load flow outputs (bus voltages, line loading, system losses)
-
-Interactive charts in the Streamlit dashboard
-
-🗺️ Background
+## 🗺️ Background
 
 This work is based on my MSc research in renewable integration and power system analysis, translated into a reproducible Python workflow inspired by DIgSILENT PowerFactory studies.
 
 📜 License
 
-This project is licensed under the MIT License — see the LICENSE
+This project is licensed under the MIT License — see the [LICENSE](https://github.com/kenfidelis/hybrid-solar-wind/blob/main/LICENSE)
 
 
-**Tech:** Python • pvlib • windpowerlib • pandapower • Streamlit
+
+
 

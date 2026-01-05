@@ -14,6 +14,12 @@ solpos = location.get_solarposition(times)
 # Example clear sky irradiance
 cs = location.get_clearsky(times)  # ghi, dni, dhi
 
+pdc0_w = 50_000  # 50 kW
+...
+pv_power_w = pvlib.pvsystem.pvwatts_dc(poa["poa_global"], temp_cell=25, pdc0=pdc0_w, gamma_pdc=-0.004)
+plt.plot(pv_power_w.index, pv_power_w.values, label="PV Power (W)")
+
+
 # Simple PV system parameters
 system = pvlib.pvsystem.PVSystem(surface_tilt=30, surface_azimuth=180, 
                                   module_parameters={'pdc0': 100, 'gamma_pdc': -0.004},
@@ -32,3 +38,4 @@ plt.legend()
 plt.title("PV Output (Sample Day - Enugu)")
 plt.ylabel("Power (W)")
 plt.show()
+

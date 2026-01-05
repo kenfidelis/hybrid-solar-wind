@@ -22,3 +22,38 @@ It demonstrates how **PV and Wind systems** can be modeled in Python, integrated
 ---
 
 ## 📂 Repository Structure
+```text
+hybrid-solar-wind/
+├── app.py                # Streamlit dashboard entrypoint
+├── dashboard/            # Dashboard components/assets (plots, UI helpers, etc.)
+├── samples/              # Sample input data / config files
+├── run_pv.py             # PV modelling workflow (pvlib)
+├── run_wind.py           # Wind modelling workflow (windpowerlib)
+├── run_hybrid.py         # Hybrid integration + pandapower load flow
+├── requirements.txt
+├── README.md
+└── LICENSE
+
+🚀 Quickstart (Run Locally)
+1) Clone
+git clone https://github.com/kenfidelis/hybrid-solar-wind.git
+cd hybrid-solar-wind
+
+2) Create a virtual environment + install dependencies
+python -m venv .venv
+source .venv/bin/activate   # Windows: .venv\Scripts\activate
+pip install -r requirements.txt
+
+3) Run the Streamlit dashboard
+streamlit run app.py
+
+🧪 Run the simulation scripts (CLI)
+PV-only simulation
+python run_pv.py
+
+Wind-only simulation
+python run_wind.py
+
+Hybrid PV + Wind simulation (grid + load flow)
+python run_hybrid.py
+

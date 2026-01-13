@@ -5,7 +5,8 @@ A reproducible Python implementation inspired by my MSc research on **hybrid PV-
 This project models PV and wind generation, integrates them with a simplified grid network, and visualizes results in an interactive Streamlit dashboard.
 
 **Tech:** Python • pvlib • windpowerlib • pandapower • Streamlit  
-**Domain:** renewable integration • load flow • grid constraints • reliability-minded modelling
+**Domain:** renewable integration • load flow • grid constraints • reliability-minded modelling  
+📄 Case study: [docs/case-study.md](docs/case-study.md)
 
 ---
 
@@ -20,7 +21,7 @@ This repo demonstrates an end-to-end workflow for those studies using open-sourc
 ---
 
 ## Architecture (high level)
-
+```
 Data (weather / assumptions / samples)
         ↓
 PV Model (pvlib) ─────────┐
@@ -92,4 +93,5 @@ This work is based on my MSc research in renewable integration and power system 
 ## 📜 License
 
 This project is licensed under the MIT License — see the [LICENSE](LICENSE)
+
 

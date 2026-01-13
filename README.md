@@ -1,41 +1,57 @@
-# ⚡ Hybrid Solar-Wind Energy Model for Nigeria
+⚡ Hybrid Solar–Wind Energy Model for Nigeria (Python + Streamlit)
+===============================================================
 
-[![Python](https://img.shields.io/badge/Python-3.9%2B-blue.svg)](https://www.python.org/)
-[![Streamlit](https://img.shields.io/badge/Streamlit-App-green.svg)](https://streamlit.io)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+A reproducible Python implementation inspired by my MSc research on **hybrid PV-wind integration** and **grid load flow** analysis.  
+This project models PV and wind generation, integrates them with a simplified grid network, and visualizes results in an interactive Streamlit dashboard.
 
-This repository provides a Python-based equivalent of my MSc thesis originally modeled in DIgSILENT PowerFactory:
-
-> *Modelling and Simulation of Hybrid Wind and Photovoltaic Connected System to Nigeria Power Network*
-
-It demonstrates how PV and wind systems can be modeled in Python, integrated into a grid network, and visualized interactively.
-
-**Tech:** Python • pvlib • windpowerlib • pandapower • Streamlit
+**Tech:** Python • pvlib • windpowerlib • pandapower • Streamlit  
+**Domain:** renewable integration • load flow • grid constraints • reliability-minded modelling
 
 ---
 
-## ✨ Features
-- ✅ PV system modeling using [pvlib](https://pvlib-python.readthedocs.io/)
-- ✅ Wind turbine modeling using [windpowerlib](https://windpowerlib.readthedocs.io/)
-- ✅ Load flow & grid analysis with [pandapower](https://www.pandapower.org/)
-- ✅ Hybrid system simulation (PV + Wind + Load)
-- ✅ Interactive dashboard with [Streamlit](https://streamlit.io)
+## Why this exists
+Grid-integrated renewables require more than energy yield estimates — engineers need:
+- generation profiles (PV + wind),
+- system-level impacts (voltages, line loading, losses),
+- and clear visualization for scenario comparison.
+
+This repo demonstrates an end-to-end workflow for those studies using open-source Python tools.
 
 ---
 
-## 📂 Repository Structure
-```text
+## Architecture (high level)
+
+Data (weather / assumptions / samples)
+        ↓
+PV Model (pvlib) ─────────┐
+                          ├── Hybrid integration + Load Flow (pandapower) ──→ Results
+Wind Model (windpowerlib) ┘
+        ↓
+Streamlit Dashboard (app.py) → Interactive plots + comparison views
+
+---
+
+## Features
+✅ PV system modeling (pvlib)  
+✅ Wind turbine modeling (windpowerlib)  
+✅ Load flow & grid analysis (pandapower)  
+✅ Hybrid PV + wind simulation (generation vs load)  
+✅ Interactive Streamlit dashboard  
+
+---
+
+## Repo structure
 hybrid-solar-wind/
-├── app.py                # Streamlit dashboard entrypoint
-├── dashboard/            # Dashboard components/assets (plots, UI helpers, etc.)
-├── samples/              # Sample input data / config files
-├── run_pv.py             # PV modelling workflow (pvlib)
-├── run_wind.py           # Wind modelling workflow (windpowerlib)
-├── run_hybrid.py         # Hybrid integration + pandapower load flow
+├── app.py
+├── dashboard/
+├── samples/
+├── run_pv.py
+├── run_wind.py
+├── run_hybrid.py
 ├── requirements.txt
-├── README.md
 └── LICENSE
 
+---
 
 ## 🚀 Quickstart (Run Locally)
 1) Clone
@@ -76,3 +92,4 @@ This work is based on my MSc research in renewable integration and power system 
 ## 📜 License
 
 This project is licensed under the MIT License — see the [LICENSE](LICENSE)
+

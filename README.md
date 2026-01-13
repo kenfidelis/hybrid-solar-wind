@@ -53,6 +53,9 @@ hybrid-solar-wind/
 └── LICENSE
 
 ---
+Requirements
+> Python 3.10+ (recommended)
+> Tested on Linux/macOS (Windows should work with venv)
 
 ## 🚀 Quickstart (Run Locally)
 1) Clone
@@ -86,6 +89,12 @@ Depending on the script you run, you should see:
 - Load flow outputs (bus voltages, line loading, system losses)
 - Interactive charts in the Streamlit dashboard
 
+## Skills demonstrated
+- Power system modelling concepts translated into reproducible Python code
+- Modular simulation workflow (PV, wind, hybrid integration)
+- Grid-impact analysis using pandapower (voltages, loading, losses)
+- Communicating results through an interactive Streamlit dashboard
+
 ## 🗺️ Background
 
 This work is based on my MSc research in renewable integration and power system analysis, translated into a reproducible Python workflow inspired by DIgSILENT PowerFactory studies.
@@ -93,5 +102,6 @@ This work is based on my MSc research in renewable integration and power system 
 ## 📜 License
 
 This project is licensed under the MIT License — see the [LICENSE](LICENSE)
+
 
 
